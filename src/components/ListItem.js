@@ -12,8 +12,7 @@ export class ListItem extends Component {
 
     //внутренняя разметка
     this.$rootElement.innerHTML = `
-      <span>${this.state.date.toLocaleString()}</span>
-      <span>${this.state.amount}</span>
+      ${this.state.date.toLocaleString()} -&nbsp;<b>$${this.state.amount}</b>
       <button class="delete-button">Delete</button>
     `;
 
